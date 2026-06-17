@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 50000px;
+    background: #050505;
+    color: white;
+    font-family: monospace;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+#intro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
