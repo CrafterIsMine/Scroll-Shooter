@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Shooter - Stage 3</title>
+    <title>Scroll Shooter - Expansion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="ui">Score: <span id="score">0</span> | Lives: <span id="lives">3</span> | Wave: <span id="wave">1</span></div>
-    
-    <div id="intro">
-        <h2>SCROLL DOWN TO THRUST</h2>
-        <p>Move mouse to steer | Click/Space to rapid fire</p>
+    <div id="ui">
+        Score: <span id="score">0</span> | 
+        High: <span id="hiScore">0</span> | 
+        Lives: <span id="lives">3</span> | 
+        Wave: <span id="wave">1</span>
     </div>
+    
+    <div id="menu">
+        <h1>SCROLL SHOOTER</h1>
+        <p>Scroll down to thrust. Mouse to steer.</p>
+        <p>Click or Space to fire.</p>
+        <button id="startBtn">Start</button>
+    </div>
+
+    <div id="intro" style="opacity: 0;">
+        <p>Keep scrolling...</p>
+    </div>
+
     <canvas id="game"></canvas>
 
     <script src="script.js"></script>
